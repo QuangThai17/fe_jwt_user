@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card">
+                <h2 class="card-title text-center">Register</h2>
+                <form (ngSubmit)="userRegister()">
+                    <div class="card-body py-md-4">
+                        <form _lpchecked="1">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="userName" name="userName" [(ngModel)]="user.userName"
+                                    placeholder="User Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="userFirstName" name="userFirstName"  [(ngModel)]="user.userFirstName"
+                                    placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="userLastName" name="userLastName" [(ngModel)]="user.userLastName"
+                                    placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="user.userPassword" name="userPassword" [(ngModel)]="user.userPassword" 
+                                placeholder="Password">
+                            </div>
+                            <div class="d-flex flex-row align-items-center justify-content-between">
+                                <a href="#">Login</a>   
+                            </div>
+                        </form>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
