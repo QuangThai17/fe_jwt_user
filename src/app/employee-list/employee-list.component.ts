@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Employee } from '../employee';
 import { EmployeeService } from '../_services/employee.service';
+
 
 @Component({
   selector: 'app-employee-list',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  templateUrl: './employee-list.component.html',
+  styleUrls: ['./employee-list.component.css']
 })
-export class AdminComponent implements OnInit {
+export class EmployeeListComponent implements OnInit {
 
   id : any;
   employees : any;

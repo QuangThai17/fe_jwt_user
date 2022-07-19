@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
@@ -15,16 +14,25 @@ import { RouterModule } from '@angular/router';
 import { AuthGuard } from './_auth/auth.guard';
 import { AuthInterceptor } from './_auth/auth.interceptor';
 import { UserService } from './_services/user.service';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     AdminComponent,
     UserComponent,
     LoginComponent,
     HeaderComponent,
-    ForbiddenComponent
+    ForbiddenComponent,
+    EmployeeListComponent,
+    UpdateEmployeeComponent,
+    EmployeeDetailComponent,
+    CreateEmployeeComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
