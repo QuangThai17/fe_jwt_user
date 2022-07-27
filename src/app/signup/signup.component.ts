@@ -26,7 +26,7 @@ export class SignupComponent implements OnInit {
     console.log(this.user);
     this.signupService.signup(this.user).subscribe(data => {
       alert("Success!");
-    }, error => ("Sorry User not Registe"));
+    }, error => ("Sorry User not Register"));
   }
 
 }
