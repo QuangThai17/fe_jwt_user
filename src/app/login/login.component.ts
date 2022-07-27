@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
       (response: any) => {
         this.userAuthService.setToken(response.jwtToken);
         this.userAuthService.setRoles(response.user.role);
+        debugger;
         console.log(response.user.role);
         
 
